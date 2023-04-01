@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+
+<installation xmlns="urn:jboss:galleon:provisioning:2.0">
+    <transitive>
+        <feature-pack location="wildfly-core@maven(org.jboss.universe:community-universe):current#6.0.1.Final"/>
+        <feature-pack location="wildfly-servlet@maven(org.jboss.universe:community-universe):current#14.0.0.Final"/>
+    </transitive>
+    <feature-pack location="wildfly@maven(org.jboss.universe:community-universe):current#14.0.0.Final">
+        <packages>
+            <include name="docs.examples.configs"/>
+        </packages>
+    </feature-pack>
+</installation>

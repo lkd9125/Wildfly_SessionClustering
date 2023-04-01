@@ -1,0 +1,709 @@
+2023-03-24 15:04:35,453 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2023-03-24 15:04:36,203 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2023-03-24 15:04:36,211 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2023-03-24 15:04:36,333 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly Full 14.0.0.Final (WildFly Core 6.0.1.Final) starting
+2023-03-24 15:04:36,335 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.lwawt.macosx.LWCToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|localhost|*.localhost
+	gopherProxySet = false
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|localhost|*.localhost
+	java.awt.graphicsenv = sun.awt.CGraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.lwawt.macosx.CPrinterJob
+	java.class.path = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib/endorsed
+	java.ext.dirs = /Users/igyeongdo/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+	java.home = /Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre
+	java.io.tmpdir = /var/folders/kg/vm_2c4q56_b31pmd5cxr0tpr0000gn/T/
+	java.library.path = /Users/igyeongdo/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_351-b10
+	java.specification.maintenance.version = 4
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_351
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.351-b10
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트
+	jboss.host.name = igyeongdoui-macbookpro
+	jboss.modules.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = igyeongdoui-macbookpro
+	jboss.qualified.host.name = igyeongdoui-macbookpro.local
+	jboss.server.base.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone
+	jboss.server.config.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/configuration
+	jboss.server.data.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/data
+	jboss.server.deploy.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/data/content
+	jboss.server.log.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/log
+	jboss.server.name = igyeongdoui-macbookpro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/configuration/logging.properties
+	module.path = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/modules
+	org.jboss.boot.log.file = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 13.2.1
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16|localhost|*.localhost
+	sun.arch.data.model = 64
+	sun.boot.class.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/classes
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/jboss-modules.jar -mp /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/modules org.jboss.as.standalone -Djboss.home.dir=/Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트 -Djboss.server.base.dir=/Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone --server-config=standalone-ha.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = KR
+	user.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/bin
+	user.home = /Users/igyeongdo
+	user.language = ko
+	user.language.format = ko-Kore
+	user.name = igyeongdo
+	user.timezone = Asia/Seoul
+2023-03-24 15:04:36,336 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/log/server.log -Dlogging.configuration=file:/Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/configuration/logging.properties 
+2023-03-24 15:04:37,505 INFO  [org.wildfly.security] (ServerService Thread Pool -- 30) ELY00001: WildFly Elytron version 1.6.0.Final
+2023-03-24 15:04:38,393 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2023-03-24 15:04:38,732 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 36) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2023-03-24 15:04:39,084 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2023-03-24 15:04:39,137 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.6.5.Final
+2023-03-24 15:04:39,152 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.6.5.Final
+2023-03-24 15:04:39,235 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 51) WFLYCLINF0001: Activating Infinispan subsystem.
+2023-03-24 15:04:39,319 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 61) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2023-03-24 15:04:39,315 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 63) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2023-03-24 15:04:39,323 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 65) WFLYNAM0001: Activating Naming Subsystem
+2023-03-24 15:04:39,333 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 71) WFLYSEC0002: Activating Security Subsystem
+2023-03-24 15:04:39,377 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2023-03-24 15:04:39,361 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2023-03-24 15:04:39,460 INFO  [org.jboss.as.security] (MSC service thread 1-1) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2023-03-24 15:04:39,438 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 59) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2023-03-24 15:04:39,480 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 56) WFLYCLJG0001: Activating JGroups subsystem. JGroups version 4.0.13
+2023-03-24 15:04:39,451 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2023-03-24 15:04:39,503 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 62) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2023-03-24 15:04:39,517 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+2023-03-24 15:04:39,518 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2023-03-24 15:04:39,534 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2023-03-24 15:04:39,534 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 52) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2023-03-24 15:04:39,607 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2023-03-24 15:04:39,656 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+2023-03-24 15:04:39,712 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0003: Undertow 2.0.13.Final starting
+2023-03-24 15:04:39,794 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 53) WFLYRS0016: RESTEasy version 3.6.1.Final
+2023-03-24 15:04:39,818 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2023-03-24 15:04:39,835 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.8.Final
+2023-03-24 15:04:40,066 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2023-03-24 15:04:40,066 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2023-03-24 15:04:40,214 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2023-03-24 15:04:40,224 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0012: Started server default-server.
+2023-03-24 15:04:40,236 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+2023-03-24 15:04:40,298 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow AJP listener ajp listening on 127.0.0.1:8001
+2023-03-24 15:04:40,298 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:9000
+2023-03-24 15:04:40,327 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 78) MODCLUSTER000001: Initializing mod_cluster version 1.4.0.Final
+2023-03-24 15:04:40,354 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 78) MODCLUSTER000032: Listening to proxy advertisements on /224.0.1.105:23364
+2023-03-24 15:04:40,489 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0493: EJB subsystem suspension complete
+2023-03-24 15:04:40,614 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2023-03-24 15:04:40,849 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2023-03-24 15:04:40,941 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-5) WFLYDM0111: Keystore /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2023-03-24 15:04:40,954 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/deployments
+2023-03-24 15:04:40,974 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "clustering2-0.0.1-SNAPSHOT.war" (runtime-name: "clustering2-0.0.1-SNAPSHOT.war")
+2023-03-24 15:04:41,332 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2023-03-24 15:04:41,566 INFO  [org.jboss.ws.common.management] (MSC service thread 1-6) JBWS022052: Starting JBossWS 5.2.3.Final (Apache CXF 3.2.5.jbossorg-1) 
+2023-03-24 15:04:43,724 WARN  [org.jboss.as.ee] (MSC service thread 1-1) WFLYEE0007: Not installing optional component org.springframework.http.server.reactive.ServletServerHttpResponse$ResponseAsyncListener due to an exception (enable DEBUG log level to see the cause)
+2023-03-24 15:04:43,734 WARN  [org.jboss.as.ee] (MSC service thread 1-1) WFLYEE0007: Not installing optional component org.springframework.http.server.ServletServerHttpAsyncRequestControl due to an exception (enable DEBUG log level to see the cause)
+2023-03-24 15:04:43,737 WARN  [org.jboss.as.ee] (MSC service thread 1-1) WFLYEE0007: Not installing optional component org.springframework.web.context.request.async.StandardServletAsyncWebRequest due to an exception (enable DEBUG log level to see the cause)
+2023-03-24 15:04:43,738 WARN  [org.jboss.as.ee] (MSC service thread 1-1) WFLYEE0007: Not installing optional component org.springframework.http.server.reactive.ServletHttpHandlerAdapter$HttpHandlerAsyncListener due to an exception (enable DEBUG log level to see the cause)
+2023-03-24 15:04:43,751 WARN  [org.jboss.as.ee] (MSC service thread 1-1) WFLYEE0007: Not installing optional component org.springframework.http.server.reactive.ServletServerHttpRequest$RequestAsyncListener due to an exception (enable DEBUG log level to see the cause)
+2023-03-24 15:04:45,034 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-7) ISPN000078: Starting JGroups channel ejb
+2023-03-24 15:04:45,033 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000078: Starting JGroups channel ejb
+2023-03-24 15:04:45,033 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000078: Starting JGroups channel ejb
+2023-03-24 15:04:45,034 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-3) ISPN000078: Starting JGroups channel ejb
+2023-03-24 15:04:45,057 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-5) ISPN000094: Received new cluster view for channel ejb: [igyeongdoui-macbookpro|0] (1) [igyeongdoui-macbookpro]
+2023-03-24 15:04:45,057 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-3) ISPN000094: Received new cluster view for channel ejb: [igyeongdoui-macbookpro|0] (1) [igyeongdoui-macbookpro]
+2023-03-24 15:04:45,058 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-1) ISPN000094: Received new cluster view for channel ejb: [igyeongdoui-macbookpro|0] (1) [igyeongdoui-macbookpro]
+2023-03-24 15:04:45,057 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-7) ISPN000094: Received new cluster view for channel ejb: [igyeongdoui-macbookpro|0] (1) [igyeongdoui-macbookpro]
+2023-03-24 15:04:45,072 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000079: Channel ejb local address is igyeongdoui-macbookpro, physical addresses are [127.0.0.1:7600]
+2023-03-24 15:04:45,072 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000079: Channel ejb local address is igyeongdoui-macbookpro, physical addresses are [127.0.0.1:7600]
+2023-03-24 15:04:45,071 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-3) ISPN000079: Channel ejb local address is igyeongdoui-macbookpro, physical addresses are [127.0.0.1:7600]
+2023-03-24 15:04:45,072 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-7) ISPN000079: Channel ejb local address is igyeongdoui-macbookpro, physical addresses are [127.0.0.1:7600]
+2023-03-24 15:04:45,091 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-7) ISPN000128: Infinispan version: Infinispan 'Estrella Galicia' 9.3.1.Final
+2023-03-24 15:04:45,555 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2023-03-24 15:04:45,555 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 79) WFLYCLINF0002: Started default cache from server container
+2023-03-24 15:04:45,632 INFO  [org.wildfly.clustering.server] (DistributedSingletonService - 1) WFLYCLSV0003: igyeongdoui-macbookpro elected as the singleton provider of the org.wildfly.ejb3.clustered.singleton service
+2023-03-24 15:04:45,657 INFO  [org.wildfly.clustering.server] (ChannelCommandDispatcherFactory - 1) WFLYCLSV0001: This node will now operate as the singleton provider of the org.wildfly.ejb3.clustered.singleton service
+2023-03-24 15:04:45,804 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 88) 2 Spring WebApplicationInitializers detected on classpath
+2023-03-24 15:04:46,310 INFO  [stdout] (ServerService Thread Pool -- 88) 
+2023-03-24 15:04:46,314 INFO  [stdout] (ServerService Thread Pool -- 88)   .   ____          _            __ _ _
+2023-03-24 15:04:46,315 INFO  [stdout] (ServerService Thread Pool -- 88)  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2023-03-24 15:04:46,315 INFO  [stdout] (ServerService Thread Pool -- 88) ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2023-03-24 15:04:46,315 INFO  [stdout] (ServerService Thread Pool -- 88)  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2023-03-24 15:04:46,315 INFO  [stdout] (ServerService Thread Pool -- 88)   '  |____| .__|_| |_|_| |_\__, | / / / /
+2023-03-24 15:04:46,315 INFO  [stdout] (ServerService Thread Pool -- 88)  =========|_|==============|___/=/_/_/_/
+2023-03-24 15:04:46,316 INFO  [stdout] (ServerService Thread Pool -- 88) [32m :: Spring Boot :: [39m              [2m (v2.7.9)[0;39m
+2023-03-24 15:04:46,316 INFO  [stdout] (ServerService Thread Pool -- 88) 
+2023-03-24 15:04:46,327 INFO  [org.hibernate.validator.internal.util.Version] (background-preinit) HV000001: Hibernate Validator 6.0.13.Final
+2023-03-24 15:04:46,366 INFO  [com.session.clustering2.ServletInitializer] (ServerService Thread Pool -- 88) Starting ServletInitializer using Java 1.8.0_351 on igyeongdoui-MacBookPro.local with PID 70376 (started by igyeongdo in /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/bin)
+2023-03-24 15:04:46,367 INFO  [com.session.clustering2.ServletInitializer] (ServerService Thread Pool -- 88) No active profile set, falling back to 1 default profile: "default"
+2023-03-24 15:04:47,432 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 88) Initializing Spring embedded WebApplicationContext
+2023-03-24 15:04:47,435 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] (ServerService Thread Pool -- 88) Root WebApplicationContext: initialization completed in 987 ms
+2023-03-24 15:04:48,368 WARN  [org.thymeleaf.templatemode.TemplateMode] (ServerService Thread Pool -- 88) [THYMELEAF][ServerService Thread Pool -- 88] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-03-24 15:04:48,444 INFO  [com.session.clustering2.ServletInitializer] (ServerService Thread Pool -- 88) Started ServletInitializer in 2.52 seconds (JVM running for 13.613)
+2023-03-24 15:04:48,491 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 88) '' 컨텍스트에 대해 Mojarra 2.3.5.SP2을 초기화하는 중
+2023-03-24 15:04:49,642 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 88) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2023-03-24 15:04:49,699 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "clustering2-0.0.1-SNAPSHOT.war" (runtime-name : "clustering2-0.0.1-SNAPSHOT.war")
+2023-03-24 15:04:49,842 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2023-03-24 15:04:49,845 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2023-03-24 15:04:49,846 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2023-03-24 15:04:49,846 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 14.0.0.Final (WildFly Core 6.0.1.Final) started in 14933ms - Started 616 of 771 services (384 services are lazy, passive or on-demand)
+2023-03-24 15:05:24,590 INFO  [org.infinispan.CLUSTER] (thread-3,null,null) ISPN000094: Received new cluster view for channel ejb: [igyeongdoui-macbookpro|1] (2) [igyeongdoui-macbookpro, igyeongdoui-macbookpro]
+2023-03-24 15:05:24,605 INFO  [org.infinispan.CLUSTER] (thread-3,null,null) ISPN100000: Node igyeongdoui-macbookpro joined the cluster
+2023-03-24 15:05:24,612 INFO  [org.infinispan.CLUSTER] (thread-3,null,null) ISPN000094: Received new cluster view for channel ejb: [igyeongdoui-macbookpro|1] (2) [igyeongdoui-macbookpro, igyeongdoui-macbookpro]
+2023-03-24 15:05:24,619 INFO  [org.infinispan.CLUSTER] (thread-3,null,null) ISPN100000: Node igyeongdoui-macbookpro joined the cluster
+2023-03-24 15:05:24,620 INFO  [org.infinispan.CLUSTER] (thread-3,null,null) ISPN000094: Received new cluster view for channel ejb: [igyeongdoui-macbookpro|1] (2) [igyeongdoui-macbookpro, igyeongdoui-macbookpro]
+2023-03-24 15:05:24,623 INFO  [org.infinispan.CLUSTER] (thread-3,null,null) ISPN100000: Node igyeongdoui-macbookpro joined the cluster
+2023-03-24 15:05:24,628 INFO  [org.infinispan.CLUSTER] (thread-3,null,null) ISPN000094: Received new cluster view for channel ejb: [igyeongdoui-macbookpro|1] (2) [igyeongdoui-macbookpro, igyeongdoui-macbookpro]
+2023-03-24 15:05:24,634 INFO  [org.infinispan.CLUSTER] (thread-3,null,null) ISPN100000: Node igyeongdoui-macbookpro joined the cluster
+2023-03-24 15:05:26,019 INFO  [org.infinispan.CLUSTER] (remote-thread--p8-t2) [Context=default] ISPN100002: Starting rebalance with members [igyeongdoui-macbookpro, igyeongdoui-macbookpro], phase READ_OLD_WRITE_ALL, topology id 2
+2023-03-24 15:05:26,140 INFO  [org.infinispan.CLUSTER] (remote-thread--p8-t2) [Context=default] ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+2023-03-24 15:05:26,173 INFO  [org.infinispan.CLUSTER] (remote-thread--p8-t2) [Context=default] ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+2023-03-24 15:05:26,186 INFO  [org.infinispan.CLUSTER] (remote-thread--p8-t2) [Context=default] ISPN100010: Finished rebalance with members [igyeongdoui-macbookpro, igyeongdoui-macbookpro], topology id 5
+2023-03-24 15:05:26,501 INFO  [org.wildfly.clustering.server] (DistributedSingletonService - 1) WFLYCLSV0003: igyeongdoui-macbookpro elected as the singleton provider of the org.wildfly.ejb3.clustered.singleton service
+2023-03-24 15:05:27,814 INFO  [org.infinispan.CLUSTER] (remote-thread--p6-t1) [Context=client-mappings] ISPN100002: Starting rebalance with members [igyeongdoui-macbookpro, igyeongdoui-macbookpro], phase READ_OLD_WRITE_ALL, topology id 2
+2023-03-24 15:05:27,903 INFO  [org.infinispan.CLUSTER] (remote-thread--p6-t1) [Context=client-mappings] ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+2023-03-24 15:05:27,922 INFO  [org.infinispan.CLUSTER] (remote-thread--p6-t1) [Context=client-mappings] ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+2023-03-24 15:05:27,934 INFO  [org.infinispan.CLUSTER] (remote-thread--p6-t1) [Context=client-mappings] ISPN100010: Finished rebalance with members [igyeongdoui-macbookpro, igyeongdoui-macbookpro], topology id 5
+2023-03-24 15:21:42,279 INFO  [io.undertow.servlet] (default task-1) Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-24 15:21:42,282 INFO  [org.springframework.web.servlet.DispatcherServlet] (default task-1) Initializing Servlet 'dispatcherServlet'
+2023-03-24 15:21:42,292 INFO  [org.springframework.web.servlet.DispatcherServlet] (default task-1) Completed initialization in 10 ms
+2023-03-24 15:21:42,342 INFO  [com.session.clustering2.controller.IndexController] (default task-1) session -> null
+2023-03-24 15:21:46,298 INFO  [com.session.clustering2.controller.IndexController] (default task-1) 로긩 성공
+2023-03-24 15:21:46,299 INFO  [com.session.clustering2.controller.IndexController] (default task-1) session -> loginCheck
+2023-03-24 15:21:46,318 INFO  [com.session.clustering2.controller.IndexController] (default task-1) session -> loginCheck
+2023-03-24 15:21:47,871 INFO  [com.session.clustering2.controller.IndexController] (default task-1) session -> loginCheck
+2023-03-24 15:21:59,430 INFO  [com.session.clustering2.controller.IndexController] (default task-1) session -> null
+2023-03-24 15:22:00,284 INFO  [com.session.clustering2.controller.IndexController] (default task-1) session -> null
+2023-03-24 15:22:00,437 INFO  [com.session.clustering2.controller.IndexController] (default task-1) session -> null
+2023-03-24 15:22:02,961 INFO  [com.session.clustering2.controller.IndexController] (default task-1) 로긩 성공
+2023-03-24 15:22:02,962 INFO  [com.session.clustering2.controller.IndexController] (default task-1) session -> loginCheck
+2023-03-24 15:22:02,975 INFO  [com.session.clustering2.controller.IndexController] (default task-1) session -> loginCheck
+2023-03-24 15:22:05,534 INFO  [com.session.clustering2.controller.IndexController] (default task-1) session -> loginCheck
+2023-03-24 15:22:11,011 INFO  [com.session.clustering2.controller.IndexController] (default task-1) session -> loginCheck
+2023-03-24 15:22:18,594 INFO  [com.session.clustering2.controller.IndexController] (default task-1) session -> null
+2023-03-24 15:22:19,238 INFO  [com.session.clustering2.controller.IndexController] (default task-1) session -> null
+2023-03-24 15:30:05,731 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0236: Suspending server with no timeout.
+2023-03-24 15:30:05,755 INFO  [org.jboss.as.ejb3] (Thread-2) WFLYEJB0493: EJB subsystem suspension complete
+2023-03-24 15:30:05,761 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2023-03-24 15:30:05,891 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2023-03-24 15:30:05,901 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 88) WFLYUT0022: Unregistered web context: '/' from server 'default-server'
+2023-03-24 15:30:05,912 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-2) ISPN000080: Disconnecting JGroups channel ejb
+2023-03-24 15:30:05,913 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000080: Disconnecting JGroups channel ejb
+2023-03-24 15:30:05,938 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 88) Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-24 15:30:05,976 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 88) Closing Spring root WebApplicationContext
+2023-03-24 15:30:06,046 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 109) MODCLUSTER000002: Initiating mod_cluster shutdown
+2023-03-24 15:30:06,070 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0019: Host default-host stopping
+2023-03-24 15:30:06,089 WARN  [org.jboss.modcluster] (ServerService Thread Pool -- 109) MODCLUSTER000033: Failed to interrupt socket reception.: java.io.IOException: Can't assign requested address (sendto failed)
+	at java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.net.DatagramSocket.send(DatagramSocket.java:693)
+	at org.jboss.modcluster.advertise.impl.AdvertiseListenerImpl.interruptDatagramReader(AdvertiseListenerImpl.java:197)
+	at org.jboss.modcluster.advertise.impl.AdvertiseListenerImpl.stop(AdvertiseListenerImpl.java:212)
+	at org.jboss.modcluster.advertise.impl.AdvertiseListenerImpl.destroy(AdvertiseListenerImpl.java:224)
+	at org.jboss.modcluster.ModClusterService.shutdown(ModClusterService.java:198)
+	at org.wildfly.extension.mod_cluster.ContainerEventHandlerServiceConfigurator.accept(ContainerEventHandlerServiceConfigurator.java:83)
+	at org.wildfly.extension.mod_cluster.ContainerEventHandlerServiceConfigurator.accept(ContainerEventHandlerServiceConfigurator.java:50)
+	at org.wildfly.clustering.service.FunctionalService.stop(FunctionalService.java:77)
+	at org.wildfly.clustering.service.AsyncServiceConfigurator$AsyncService.lambda$stop$1(AsyncServiceConfigurator.java:142)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1985)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1487)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1378)
+	at java.lang.Thread.run(Thread.java:750)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+
+2023-03-24 15:30:06,076 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2023-03-24 15:30:06,098 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2023-03-24 15:30:06,129 INFO  [org.infinispan.CLUSTER] (ServerService Thread Pool -- 104) [Context=default] ISPN100008: Updating cache members list [igyeongdoui-macbookpro], topology id 6
+2023-03-24 15:30:06,157 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTPS listener https suspending
+2023-03-24 15:30:06,157 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow AJP listener ajp suspending
+2023-03-24 15:30:06,173 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow AJP listener ajp stopped, was bound to 127.0.0.1:8001
+2023-03-24 15:30:06,174 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2023-03-24 15:30:06,198 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTP listener default suspending
+2023-03-24 15:30:06,216 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:9000
+2023-03-24 15:30:06,220 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0004: Undertow 2.0.13.Final stopping
+2023-03-24 15:30:06,220 INFO  [org.infinispan.CLUSTER] (ServerService Thread Pool -- 106) [Context=client-mappings] ISPN100008: Updating cache members list [igyeongdoui-macbookpro], topology id 6
+2023-03-24 15:30:06,228 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 104) WFLYCLINF0003: Stopped default cache from server container
+2023-03-24 15:30:06,235 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000080: Disconnecting JGroups channel ejb
+2023-03-24 15:30:06,242 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 106) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2023-03-24 15:30:06,251 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000080: Disconnecting JGroups channel ejb
+2023-03-24 15:30:06,299 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment clustering2-0.0.1-SNAPSHOT.war (runtime-name: clustering2-0.0.1-SNAPSHOT.war) in 520ms
+2023-03-24 15:30:06,374 INFO  [org.jboss.as] (MSC service thread 1-5) WFLYSRV0050: WildFly Full 14.0.0.Final (WildFly Core 6.0.1.Final) stopped in 602ms
+2023-03-24 15:30:47,623 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2023-03-24 15:30:48,218 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2023-03-24 15:30:48,225 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2023-03-24 15:30:48,338 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 14.0.0.Final (WildFly Core 6.0.1.Final) starting
+2023-03-24 15:30:48,339 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.lwawt.macosx.LWCToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|localhost|*.localhost
+	gopherProxySet = false
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|localhost|*.localhost
+	java.awt.graphicsenv = sun.awt.CGraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.lwawt.macosx.CPrinterJob
+	java.class.path = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib/endorsed
+	java.ext.dirs = /Users/igyeongdo/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+	java.home = /Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre
+	java.io.tmpdir = /var/folders/kg/vm_2c4q56_b31pmd5cxr0tpr0000gn/T/
+	java.library.path = /Users/igyeongdo/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_351-b10
+	java.specification.maintenance.version = 4
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_351
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.351-b10
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트
+	jboss.host.name = igyeongdoui-macbookpro
+	jboss.modules.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = igyeongdoui-macbookpro
+	jboss.qualified.host.name = igyeongdoui-macbookpro.local
+	jboss.server.base.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone
+	jboss.server.config.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/configuration
+	jboss.server.data.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/data
+	jboss.server.deploy.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/data/content
+	jboss.server.log.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/log
+	jboss.server.name = igyeongdoui-macbookpro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/configuration/logging.properties
+	module.path = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/modules
+	org.jboss.boot.log.file = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 13.2.1
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16|localhost|*.localhost
+	sun.arch.data.model = 64
+	sun.boot.class.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/classes
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/jboss-modules.jar -mp /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/modules org.jboss.as.standalone -Djboss.home.dir=/Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트 -Djboss.server.base.dir=/Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone --server-config=standalone-ha.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = KR
+	user.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/bin
+	user.home = /Users/igyeongdo
+	user.language = ko
+	user.language.format = ko-Kore
+	user.name = igyeongdo
+	user.timezone = Asia/Seoul
+2023-03-24 15:30:48,340 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/log/server.log -Dlogging.configuration=file:/Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/configuration/logging.properties 
+2023-03-24 15:30:49,545 INFO  [org.wildfly.security] (ServerService Thread Pool -- 30) ELY00001: WildFly Elytron version 1.6.0.Final
+2023-03-24 15:30:50,392 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2023-03-24 15:30:50,800 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 28) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2023-03-24 15:30:51,054 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2023-03-24 15:30:51,100 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.6.5.Final
+2023-03-24 15:30:51,119 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.6.5.Final
+2023-03-24 15:30:51,190 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 51) WFLYCLINF0001: Activating Infinispan subsystem.
+2023-03-24 15:30:51,229 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 61) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2023-03-24 15:30:51,286 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 63) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2023-03-24 15:30:51,306 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 65) WFLYNAM0001: Activating Naming Subsystem
+2023-03-24 15:30:51,295 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2023-03-24 15:30:51,329 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 71) WFLYSEC0002: Activating Security Subsystem
+2023-03-24 15:30:51,379 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2023-03-24 15:30:51,398 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 56) WFLYCLJG0001: Activating JGroups subsystem. JGroups version 4.0.13
+2023-03-24 15:30:51,432 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 62) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2023-03-24 15:30:51,401 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2023-03-24 15:30:51,425 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 59) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2023-03-24 15:30:51,480 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 52) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2023-03-24 15:30:51,483 INFO  [org.jboss.as.security] (MSC service thread 1-3) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2023-03-24 15:30:51,512 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2023-03-24 15:30:51,555 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2023-03-24 15:30:51,583 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 5.0.8.Final
+2023-03-24 15:30:51,728 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+2023-03-24 15:30:51,716 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
+2023-03-24 15:30:51,759 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2023-03-24 15:30:51,758 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0003: Undertow 2.0.13.Final starting
+2023-03-24 15:30:51,774 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 53) WFLYRS0016: RESTEasy version 3.6.1.Final
+2023-03-24 15:30:51,882 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2023-03-24 15:30:52,027 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2023-03-24 15:30:52,026 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2023-03-24 15:30:52,223 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2023-03-24 15:30:52,231 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0012: Started server default-server.
+2023-03-24 15:30:52,244 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0018: Host default-host starting
+2023-03-24 15:30:52,304 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:9000
+2023-03-24 15:30:52,304 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow AJP listener ajp listening on 127.0.0.1:8001
+2023-03-24 15:30:52,323 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 78) MODCLUSTER000001: Initializing mod_cluster version 1.4.0.Final
+2023-03-24 15:30:52,342 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 78) MODCLUSTER000032: Listening to proxy advertisements on /224.0.1.105:23364
+2023-03-24 15:30:52,471 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0493: EJB subsystem suspension complete
+2023-03-24 15:30:52,591 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2023-03-24 15:30:52,809 INFO  [org.jboss.as.patching] (MSC service thread 1-8) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2023-03-24 15:30:52,850 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-8) WFLYDM0111: Keystore /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2023-03-24 15:30:52,852 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/deployments
+2023-03-24 15:30:52,863 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "clustering2-0.0.1-SNAPSHOT.war" (runtime-name: "clustering2-0.0.1-SNAPSHOT.war")
+2023-03-24 15:30:53,209 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2023-03-24 15:30:53,445 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBossWS 5.2.3.Final (Apache CXF 3.2.5.jbossorg-1) 
+2023-03-24 15:30:54,263 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000078: Starting JGroups channel ejb
+2023-03-24 15:30:54,263 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-2) ISPN000078: Starting JGroups channel ejb
+2023-03-24 15:30:54,263 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-7) ISPN000078: Starting JGroups channel ejb
+2023-03-24 15:30:54,262 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-6) ISPN000078: Starting JGroups channel ejb
+2023-03-24 15:30:54,289 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-5) ISPN000094: Received new cluster view for channel ejb: [igyeongdoui-macbookpro|3] (2) [igyeongdoui-macbookpro, igyeongdoui-macbookpro]
+2023-03-24 15:30:54,289 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-2) ISPN000094: Received new cluster view for channel ejb: [igyeongdoui-macbookpro|3] (2) [igyeongdoui-macbookpro, igyeongdoui-macbookpro]
+2023-03-24 15:30:54,289 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-6) ISPN000094: Received new cluster view for channel ejb: [igyeongdoui-macbookpro|3] (2) [igyeongdoui-macbookpro, igyeongdoui-macbookpro]
+2023-03-24 15:30:54,289 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-7) ISPN000094: Received new cluster view for channel ejb: [igyeongdoui-macbookpro|3] (2) [igyeongdoui-macbookpro, igyeongdoui-macbookpro]
+2023-03-24 15:30:54,305 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-6) ISPN000079: Channel ejb local address is igyeongdoui-macbookpro, physical addresses are [127.0.0.1:7600]
+2023-03-24 15:30:54,305 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-7) ISPN000079: Channel ejb local address is igyeongdoui-macbookpro, physical addresses are [127.0.0.1:7600]
+2023-03-24 15:30:54,304 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000079: Channel ejb local address is igyeongdoui-macbookpro, physical addresses are [127.0.0.1:7600]
+2023-03-24 15:30:54,304 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-2) ISPN000079: Channel ejb local address is igyeongdoui-macbookpro, physical addresses are [127.0.0.1:7600]
+2023-03-24 15:30:54,347 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-2) ISPN000128: Infinispan version: Infinispan 'Estrella Galicia' 9.3.1.Final
+2023-03-24 15:30:55,025 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started default cache from server container
+2023-03-24 15:30:56,681 WARN  [org.jboss.as.ee] (MSC service thread 1-3) WFLYEE0007: Not installing optional component org.springframework.http.server.reactive.ServletServerHttpResponse$ResponseAsyncListener due to an exception (enable DEBUG log level to see the cause)
+2023-03-24 15:30:56,694 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2023-03-24 15:30:56,704 WARN  [org.jboss.as.ee] (MSC service thread 1-3) WFLYEE0007: Not installing optional component org.springframework.http.server.ServletServerHttpAsyncRequestControl due to an exception (enable DEBUG log level to see the cause)
+2023-03-24 15:30:56,707 WARN  [org.jboss.as.ee] (MSC service thread 1-3) WFLYEE0007: Not installing optional component org.springframework.web.context.request.async.StandardServletAsyncWebRequest due to an exception (enable DEBUG log level to see the cause)
+2023-03-24 15:30:56,708 WARN  [org.jboss.as.ee] (MSC service thread 1-3) WFLYEE0007: Not installing optional component org.springframework.http.server.reactive.ServletHttpHandlerAdapter$HttpHandlerAsyncListener due to an exception (enable DEBUG log level to see the cause)
+2023-03-24 15:30:56,713 WARN  [org.jboss.as.ee] (MSC service thread 1-3) WFLYEE0007: Not installing optional component org.springframework.http.server.reactive.ServletServerHttpRequest$RequestAsyncListener due to an exception (enable DEBUG log level to see the cause)
+2023-03-24 15:30:57,116 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 93) 2 Spring WebApplicationInitializers detected on classpath
+2023-03-24 15:30:57,609 INFO  [stdout] (ServerService Thread Pool -- 93) 
+2023-03-24 15:30:57,612 INFO  [stdout] (ServerService Thread Pool -- 93)   .   ____          _            __ _ _
+2023-03-24 15:30:57,612 INFO  [stdout] (ServerService Thread Pool -- 93)  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2023-03-24 15:30:57,612 INFO  [stdout] (ServerService Thread Pool -- 93) ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2023-03-24 15:30:57,612 INFO  [stdout] (ServerService Thread Pool -- 93)  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2023-03-24 15:30:57,612 INFO  [stdout] (ServerService Thread Pool -- 93)   '  |____| .__|_| |_|_| |_\__, | / / / /
+2023-03-24 15:30:57,613 INFO  [stdout] (ServerService Thread Pool -- 93)  =========|_|==============|___/=/_/_/_/
+2023-03-24 15:30:57,613 INFO  [stdout] (ServerService Thread Pool -- 93) [32m :: Spring Boot :: [39m              [2m (v2.7.9)[0;39m
+2023-03-24 15:30:57,613 INFO  [stdout] (ServerService Thread Pool -- 93) 
+2023-03-24 15:30:57,617 INFO  [org.hibernate.validator.internal.util.Version] (background-preinit) HV000001: Hibernate Validator 6.0.13.Final
+2023-03-24 15:30:57,665 INFO  [com.session.clustering2.ServletInitializer] (ServerService Thread Pool -- 93) Starting ServletInitializer using Java 1.8.0_351 on igyeongdoui-MacBookPro.local with PID 74800 (started by igyeongdo in /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/bin)
+2023-03-24 15:30:57,667 INFO  [com.session.clustering2.ServletInitializer] (ServerService Thread Pool -- 93) No active profile set, falling back to 1 default profile: "default"
+2023-03-24 15:30:58,772 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 93) Initializing Spring embedded WebApplicationContext
+2023-03-24 15:30:58,774 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] (ServerService Thread Pool -- 93) Root WebApplicationContext: initialization completed in 1050 ms
+2023-03-24 15:30:59,604 WARN  [org.thymeleaf.templatemode.TemplateMode] (ServerService Thread Pool -- 93) [THYMELEAF][ServerService Thread Pool -- 93] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-03-24 15:30:59,673 INFO  [com.session.clustering2.ServletInitializer] (ServerService Thread Pool -- 93) Started ServletInitializer in 2.455 seconds (JVM running for 12.669)
+2023-03-24 15:30:59,717 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 93) '' 컨텍스트에 대해 Mojarra 2.3.5.SP2을 초기화하는 중
+2023-03-24 15:31:00,846 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 93) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2023-03-24 15:31:00,893 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "clustering2-0.0.1-SNAPSHOT.war" (runtime-name : "clustering2-0.0.1-SNAPSHOT.war")
+2023-03-24 15:31:01,068 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2023-03-24 15:31:01,072 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2023-03-24 15:31:01,073 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2023-03-24 15:31:01,073 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 14.0.0.Final (WildFly Core 6.0.1.Final) started in 13987ms - Started 615 of 771 services (384 services are lazy, passive or on-demand)
+2023-03-24 15:51:43,621 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0236: Suspending server with no timeout.
+2023-03-24 15:51:43,636 INFO  [org.jboss.as.ejb3] (Thread-2) WFLYEJB0493: EJB subsystem suspension complete
+2023-03-24 15:51:43,640 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2023-03-24 15:51:43,850 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 96) WFLYUT0022: Unregistered web context: '/' from server 'default-server'
+2023-03-24 15:51:43,891 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-7) ISPN000080: Disconnecting JGroups channel ejb
+2023-03-24 15:51:43,892 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-6) ISPN000080: Disconnecting JGroups channel ejb
+2023-03-24 15:51:43,892 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 96) Closing Spring root WebApplicationContext
+2023-03-24 15:51:43,902 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2023-03-24 15:51:44,004 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 93) WFLYCLINF0003: Stopped default cache from server container
+2023-03-24 15:51:44,018 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 93) MODCLUSTER000002: Initiating mod_cluster shutdown
+2023-03-24 15:51:44,034 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0019: Host default-host stopping
+2023-03-24 15:51:44,041 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2023-03-24 15:51:44,033 WARN  [org.jboss.modcluster] (ServerService Thread Pool -- 93) MODCLUSTER000033: Failed to interrupt socket reception.: java.io.IOException: Can't assign requested address (sendto failed)
+	at java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.net.DatagramSocket.send(DatagramSocket.java:693)
+	at org.jboss.modcluster.advertise.impl.AdvertiseListenerImpl.interruptDatagramReader(AdvertiseListenerImpl.java:197)
+	at org.jboss.modcluster.advertise.impl.AdvertiseListenerImpl.stop(AdvertiseListenerImpl.java:212)
+	at org.jboss.modcluster.advertise.impl.AdvertiseListenerImpl.destroy(AdvertiseListenerImpl.java:224)
+	at org.jboss.modcluster.ModClusterService.shutdown(ModClusterService.java:198)
+	at org.wildfly.extension.mod_cluster.ContainerEventHandlerServiceConfigurator.accept(ContainerEventHandlerServiceConfigurator.java:83)
+	at org.wildfly.extension.mod_cluster.ContainerEventHandlerServiceConfigurator.accept(ContainerEventHandlerServiceConfigurator.java:50)
+	at org.wildfly.clustering.service.FunctionalService.stop(FunctionalService.java:77)
+	at org.wildfly.clustering.service.AsyncServiceConfigurator$AsyncService.lambda$stop$1(AsyncServiceConfigurator.java:142)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1985)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1487)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1378)
+	at java.lang.Thread.run(Thread.java:750)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+
+2023-03-24 15:51:44,052 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000080: Disconnecting JGroups channel ejb
+2023-03-24 15:51:44,063 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2023-03-24 15:51:44,123 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTP listener default suspending
+2023-03-24 15:51:44,128 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow AJP listener ajp suspending
+2023-03-24 15:51:44,125 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTPS listener https suspending
+2023-03-24 15:51:44,138 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:9000
+2023-03-24 15:51:44,139 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow AJP listener ajp stopped, was bound to 127.0.0.1:8001
+2023-03-24 15:51:44,140 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2023-03-24 15:51:44,149 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 93) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2023-03-24 15:51:44,150 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0004: Undertow 2.0.13.Final stopping
+2023-03-24 15:51:44,163 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-8) ISPN000080: Disconnecting JGroups channel ejb
+2023-03-24 15:51:44,222 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment clustering2-0.0.1-SNAPSHOT.war (runtime-name: clustering2-0.0.1-SNAPSHOT.war) in 500ms
+2023-03-24 15:51:44,247 INFO  [org.jboss.as] (MSC service thread 1-4) WFLYSRV0050: WildFly Full 14.0.0.Final (WildFly Core 6.0.1.Final) stopped in 585ms
+2023-03-24 15:52:07,713 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2023-03-24 15:52:08,326 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2023-03-24 15:52:08,334 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2023-03-24 15:52:08,451 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly Full 14.0.0.Final (WildFly Core 6.0.1.Final) starting
+2023-03-24 15:52:08,452 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.lwawt.macosx.LWCToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|localhost|*.localhost
+	gopherProxySet = false
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|localhost|*.localhost
+	java.awt.graphicsenv = sun.awt.CGraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.lwawt.macosx.CPrinterJob
+	java.class.path = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib/endorsed
+	java.ext.dirs = /Users/igyeongdo/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+	java.home = /Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre
+	java.io.tmpdir = /var/folders/kg/vm_2c4q56_b31pmd5cxr0tpr0000gn/T/
+	java.library.path = /Users/igyeongdo/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_351-b10
+	java.specification.maintenance.version = 4
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_351
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.351-b10
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트
+	jboss.host.name = igyeongdoui-macbookpro
+	jboss.modules.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = igyeongdoui-macbookpro
+	jboss.qualified.host.name = igyeongdoui-macbookpro.local
+	jboss.server.base.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone
+	jboss.server.config.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/configuration
+	jboss.server.data.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/data
+	jboss.server.deploy.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/data/content
+	jboss.server.log.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/log
+	jboss.server.name = igyeongdoui-macbookpro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/configuration/logging.properties
+	module.path = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/modules
+	org.jboss.boot.log.file = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 13.2.1
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16|localhost|*.localhost
+	sun.arch.data.model = 64
+	sun.boot.class.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/classes
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_351.jdk/Contents/Home/jre/lib
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/jboss-modules.jar -mp /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/modules org.jboss.as.standalone -Djboss.home.dir=/Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트 -Djboss.server.base.dir=/Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone --server-config=standalone-ha.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = KR
+	user.dir = /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/bin
+	user.home = /Users/igyeongdo
+	user.language = ko
+	user.language.format = ko-Kore
+	user.name = igyeongdo
+	user.timezone = Asia/Seoul
+2023-03-24 15:52:08,453 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/log/server.log -Dlogging.configuration=file:/Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/configuration/logging.properties 
+2023-03-24 15:52:09,928 INFO  [org.wildfly.security] (ServerService Thread Pool -- 30) ELY00001: WildFly Elytron version 1.6.0.Final
+2023-03-24 15:52:10,844 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2023-03-24 15:52:11,316 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 5) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2023-03-24 15:52:11,674 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2023-03-24 15:52:11,723 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.6.5.Final
+2023-03-24 15:52:11,734 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.6.5.Final
+2023-03-24 15:52:11,927 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 51) WFLYCLINF0001: Activating Infinispan subsystem.
+2023-03-24 15:52:11,958 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 65) WFLYNAM0001: Activating Naming Subsystem
+2023-03-24 15:52:11,988 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 63) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2023-03-24 15:52:11,980 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 61) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2023-03-24 15:52:12,062 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2023-03-24 15:52:12,098 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 62) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2023-03-24 15:52:12,101 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2023-03-24 15:52:12,199 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 71) WFLYSEC0002: Activating Security Subsystem
+2023-03-24 15:52:12,223 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 59) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2023-03-24 15:52:12,180 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 52) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2023-03-24 15:52:12,254 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
+2023-03-24 15:52:12,289 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2023-03-24 15:52:12,327 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2023-03-24 15:52:12,332 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 56) WFLYCLJG0001: Activating JGroups subsystem. JGroups version 4.0.13
+2023-03-24 15:52:12,350 INFO  [org.jboss.as.security] (MSC service thread 1-8) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2023-03-24 15:52:12,467 INFO  [org.jboss.as.connector] (MSC service thread 1-5) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2023-03-24 15:52:12,481 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.8.Final
+2023-03-24 15:52:12,508 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2023-03-24 15:52:12,582 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = h2
+2023-03-24 15:52:12,655 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 53) WFLYRS0016: RESTEasy version 3.6.1.Final
+2023-03-24 15:52:12,756 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 2.0.13.Final starting
+2023-03-24 15:52:12,811 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2023-03-24 15:52:12,942 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2023-03-24 15:52:12,942 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2023-03-24 15:52:13,274 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0012: Started server default-server.
+2023-03-24 15:52:13,276 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2023-03-24 15:52:13,317 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2023-03-24 15:52:13,401 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:9000
+2023-03-24 15:52:13,401 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow AJP listener ajp listening on 127.0.0.1:8001
+2023-03-24 15:52:13,448 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 79) MODCLUSTER000001: Initializing mod_cluster version 1.4.0.Final
+2023-03-24 15:52:13,470 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 79) MODCLUSTER000032: Listening to proxy advertisements on /224.0.1.105:23364
+2023-03-24 15:52:13,575 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0493: EJB subsystem suspension complete
+2023-03-24 15:52:13,701 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2023-03-24 15:52:13,927 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2023-03-24 15:52:14,035 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-1) WFLYDM0111: Keystore /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2023-03-24 15:52:14,041 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/standalone/deployments
+2023-03-24 15:52:14,060 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "clustering2-0.0.1-SNAPSHOT.war" (runtime-name: "clustering2-0.0.1-SNAPSHOT.war")
+2023-03-24 15:52:14,408 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2023-03-24 15:52:14,663 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 5.2.3.Final (Apache CXF 3.2.5.jbossorg-1) 
+2023-03-24 15:52:17,477 WARN  [org.jboss.as.ee] (MSC service thread 1-1) WFLYEE0007: Not installing optional component org.springframework.http.server.reactive.ServletServerHttpResponse$ResponseAsyncListener due to an exception (enable DEBUG log level to see the cause)
+2023-03-24 15:52:17,488 WARN  [org.jboss.as.ee] (MSC service thread 1-1) WFLYEE0007: Not installing optional component org.springframework.http.server.ServletServerHttpAsyncRequestControl due to an exception (enable DEBUG log level to see the cause)
+2023-03-24 15:52:17,490 WARN  [org.jboss.as.ee] (MSC service thread 1-1) WFLYEE0007: Not installing optional component org.springframework.web.context.request.async.StandardServletAsyncWebRequest due to an exception (enable DEBUG log level to see the cause)
+2023-03-24 15:52:17,491 WARN  [org.jboss.as.ee] (MSC service thread 1-1) WFLYEE0007: Not installing optional component org.springframework.http.server.reactive.ServletHttpHandlerAdapter$HttpHandlerAsyncListener due to an exception (enable DEBUG log level to see the cause)
+2023-03-24 15:52:17,503 WARN  [org.jboss.as.ee] (MSC service thread 1-1) WFLYEE0007: Not installing optional component org.springframework.http.server.reactive.ServletServerHttpRequest$RequestAsyncListener due to an exception (enable DEBUG log level to see the cause)
+2023-03-24 15:52:21,306 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000078: Starting JGroups channel ejb
+2023-03-24 15:52:21,309 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000078: Starting JGroups channel ejb
+2023-03-24 15:52:21,306 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-7) ISPN000078: Starting JGroups channel ejb
+2023-03-24 15:52:21,306 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000078: Starting JGroups channel ejb
+2023-03-24 15:52:21,333 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-4) ISPN000094: Received new cluster view for channel ejb: [igyeongdoui-macbookpro|1] (2) [igyeongdoui-macbookpro, igyeongdoui-macbookpro]
+2023-03-24 15:52:21,333 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-5) ISPN000094: Received new cluster view for channel ejb: [igyeongdoui-macbookpro|1] (2) [igyeongdoui-macbookpro, igyeongdoui-macbookpro]
+2023-03-24 15:52:21,333 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-1) ISPN000094: Received new cluster view for channel ejb: [igyeongdoui-macbookpro|1] (2) [igyeongdoui-macbookpro, igyeongdoui-macbookpro]
+2023-03-24 15:52:21,332 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-7) ISPN000094: Received new cluster view for channel ejb: [igyeongdoui-macbookpro|1] (2) [igyeongdoui-macbookpro, igyeongdoui-macbookpro]
+2023-03-24 15:52:21,349 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000079: Channel ejb local address is igyeongdoui-macbookpro, physical addresses are [127.0.0.1:7600]
+2023-03-24 15:52:21,349 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-7) ISPN000079: Channel ejb local address is igyeongdoui-macbookpro, physical addresses are [127.0.0.1:7600]
+2023-03-24 15:52:21,349 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000079: Channel ejb local address is igyeongdoui-macbookpro, physical addresses are [127.0.0.1:7600]
+2023-03-24 15:52:21,349 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000079: Channel ejb local address is igyeongdoui-macbookpro, physical addresses are [127.0.0.1:7600]
+2023-03-24 15:52:21,425 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-4) ISPN000128: Infinispan version: Infinispan 'Estrella Galicia' 9.3.1.Final
+2023-03-24 15:52:22,281 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 79) WFLYCLINF0002: Started default cache from server container
+2023-03-24 15:52:22,281 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started client-mappings cache from ejb container
+2023-03-24 15:52:22,655 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 86) 2 Spring WebApplicationInitializers detected on classpath
+2023-03-24 15:52:23,186 INFO  [stdout] (ServerService Thread Pool -- 86) 
+2023-03-24 15:52:23,188 INFO  [stdout] (ServerService Thread Pool -- 86)   .   ____          _            __ _ _
+2023-03-24 15:52:23,188 INFO  [stdout] (ServerService Thread Pool -- 86)  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2023-03-24 15:52:23,190 INFO  [stdout] (ServerService Thread Pool -- 86) ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2023-03-24 15:52:23,190 INFO  [stdout] (ServerService Thread Pool -- 86)  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2023-03-24 15:52:23,190 INFO  [stdout] (ServerService Thread Pool -- 86)   '  |____| .__|_| |_|_| |_\__, | / / / /
+2023-03-24 15:52:23,190 INFO  [stdout] (ServerService Thread Pool -- 86)  =========|_|==============|___/=/_/_/_/
+2023-03-24 15:52:23,192 INFO  [stdout] (ServerService Thread Pool -- 86) [32m :: Spring Boot :: [39m              [2m (v2.7.9)[0;39m
+2023-03-24 15:52:23,193 INFO  [stdout] (ServerService Thread Pool -- 86) 
+2023-03-24 15:52:23,201 INFO  [org.hibernate.validator.internal.util.Version] (background-preinit) HV000001: Hibernate Validator 6.0.13.Final
+2023-03-24 15:52:23,243 INFO  [com.session.clustering2.ServletInitializer] (ServerService Thread Pool -- 86) Starting ServletInitializer using Java 1.8.0_351 on igyeongdoui-MacBookPro.local with PID 77713 (started by igyeongdo in /Users/igyeongdo/WokrSpace/세션 클러스터링/1_14_테스트/bin)
+2023-03-24 15:52:23,245 INFO  [com.session.clustering2.ServletInitializer] (ServerService Thread Pool -- 86) No active profile set, falling back to 1 default profile: "default"
+2023-03-24 15:52:24,513 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 86) Initializing Spring embedded WebApplicationContext
+2023-03-24 15:52:24,515 INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] (ServerService Thread Pool -- 86) Root WebApplicationContext: initialization completed in 1164 ms
+2023-03-24 15:52:25,544 WARN  [org.thymeleaf.templatemode.TemplateMode] (ServerService Thread Pool -- 86) [THYMELEAF][ServerService Thread Pool -- 86] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-03-24 15:52:25,635 INFO  [com.session.clustering2.ServletInitializer] (ServerService Thread Pool -- 86) Started ServletInitializer in 2.864 seconds (JVM running for 18.566)
+2023-03-24 15:52:25,691 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 86) '' 컨텍스트에 대해 Mojarra 2.3.5.SP2을 초기화하는 중
+2023-03-24 15:52:27,058 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 86) WFLYUT0021: Registered web context: '/' for server 'default-server'
+2023-03-24 15:52:27,121 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "clustering2-0.0.1-SNAPSHOT.war" (runtime-name : "clustering2-0.0.1-SNAPSHOT.war")
+2023-03-24 15:52:27,296 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2023-03-24 15:52:27,302 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2023-03-24 15:52:27,303 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2023-03-24 15:52:27,303 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 14.0.0.Final (WildFly Core 6.0.1.Final) started in 20149ms - Started 615 of 771 services (384 services are lazy, passive or on-demand)
+2023-03-24 17:37:19,167 INFO  [org.wildfly.clustering.server] (DistributedSingletonService - 1) WFLYCLSV0003: igyeongdoui-macbookpro elected as the singleton provider of the org.wildfly.ejb3.clustered.singleton service
+2023-03-24 17:37:19,349 INFO  [org.wildfly.clustering.server] (ChannelCommandDispatcherFactory - 2) WFLYCLSV0001: This node will now operate as the singleton provider of the org.wildfly.ejb3.clustered.singleton service
+2023-03-24 17:37:19,408 INFO  [org.infinispan.CLUSTER] (thread-55,ejb,igyeongdoui-macbookpro) ISPN000094: Received new cluster view for channel ejb: [igyeongdoui-macbookpro|2] (1) [igyeongdoui-macbookpro]
+2023-03-24 17:37:19,419 INFO  [org.infinispan.CLUSTER] (thread-55,ejb,igyeongdoui-macbookpro) ISPN100001: Node igyeongdoui-macbookpro left the cluster
+2023-03-24 17:37:19,432 INFO  [org.infinispan.CLUSTER] (thread-55,ejb,igyeongdoui-macbookpro) ISPN000094: Received new cluster view for channel ejb: [igyeongdoui-macbookpro|2] (1) [igyeongdoui-macbookpro]
+2023-03-24 17:37:19,434 INFO  [org.infinispan.CLUSTER] (thread-55,ejb,igyeongdoui-macbookpro) ISPN100001: Node igyeongdoui-macbookpro left the cluster
+2023-03-24 17:37:19,435 INFO  [org.infinispan.CLUSTER] (thread-55,ejb,igyeongdoui-macbookpro) ISPN000094: Received new cluster view for channel ejb: [igyeongdoui-macbookpro|2] (1) [igyeongdoui-macbookpro]
+2023-03-24 17:37:19,438 INFO  [org.infinispan.CLUSTER] (thread-55,ejb,igyeongdoui-macbookpro) ISPN100001: Node igyeongdoui-macbookpro left the cluster
+2023-03-24 17:37:19,452 INFO  [org.infinispan.CLUSTER] (thread-55,ejb,igyeongdoui-macbookpro) ISPN000094: Received new cluster view for channel ejb: [igyeongdoui-macbookpro|2] (1) [igyeongdoui-macbookpro]
+2023-03-24 17:37:19,456 INFO  [org.infinispan.CLUSTER] (thread-55,ejb,igyeongdoui-macbookpro) ISPN100001: Node igyeongdoui-macbookpro left the cluster
+2023-03-24 17:37:19,484 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p18-t1) [Context=default] ISPN100007: After merge (or coordinator change), recovered members [igyeongdoui-macbookpro] with topology id 7
+2023-03-24 17:37:19,484 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p20-t1) [Context=client-mappings] ISPN100007: After merge (or coordinator change), recovered members [igyeongdoui-macbookpro] with topology id 7
+2023-03-24 17:37:20,222 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0236: Suspending server with no timeout.
+2023-03-24 17:37:20,246 INFO  [org.jboss.as.ejb3] (Thread-2) WFLYEJB0493: EJB subsystem suspension complete
+2023-03-24 17:37:20,251 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2023-03-24 17:37:20,376 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2023-03-24 17:37:20,413 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 86) WFLYUT0022: Unregistered web context: '/' from server 'default-server'
+2023-03-24 17:37:20,421 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-6) ISPN000080: Disconnecting JGroups channel ejb
+2023-03-24 17:37:20,421 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-3) ISPN000080: Disconnecting JGroups channel ejb
+2023-03-24 17:37:20,422 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 86) Closing Spring root WebApplicationContext
+2023-03-24 17:37:20,465 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 92) WFLYCLINF0003: Stopped default cache from server container
+2023-03-24 17:37:20,469 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000080: Disconnecting JGroups channel ejb
+2023-03-24 17:37:20,519 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0019: Host default-host stopping
+2023-03-24 17:37:20,526 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2023-03-24 17:37:20,530 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 97) MODCLUSTER000002: Initiating mod_cluster shutdown
+2023-03-24 17:37:20,540 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2023-03-24 17:37:20,545 WARN  [org.jboss.modcluster] (ServerService Thread Pool -- 97) MODCLUSTER000033: Failed to interrupt socket reception.: java.io.IOException: Can't assign requested address (sendto failed)
+	at java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.net.DatagramSocket.send(DatagramSocket.java:693)
+	at org.jboss.modcluster.advertise.impl.AdvertiseListenerImpl.interruptDatagramReader(AdvertiseListenerImpl.java:197)
+	at org.jboss.modcluster.advertise.impl.AdvertiseListenerImpl.stop(AdvertiseListenerImpl.java:212)
+	at org.jboss.modcluster.advertise.impl.AdvertiseListenerImpl.destroy(AdvertiseListenerImpl.java:224)
+	at org.jboss.modcluster.ModClusterService.shutdown(ModClusterService.java:198)
+	at org.wildfly.extension.mod_cluster.ContainerEventHandlerServiceConfigurator.accept(ContainerEventHandlerServiceConfigurator.java:83)
+	at org.wildfly.extension.mod_cluster.ContainerEventHandlerServiceConfigurator.accept(ContainerEventHandlerServiceConfigurator.java:50)
+	at org.wildfly.clustering.service.FunctionalService.stop(FunctionalService.java:77)
+	at org.wildfly.clustering.service.AsyncServiceConfigurator$AsyncService.lambda$stop$1(AsyncServiceConfigurator.java:142)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1985)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1487)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1378)
+	at java.lang.Thread.run(Thread.java:750)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+
+2023-03-24 17:37:20,593 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow AJP listener ajp suspending
+2023-03-24 17:37:20,593 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTPS listener https suspending
+2023-03-24 17:37:20,593 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTP listener default suspending
+2023-03-24 17:37:20,595 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 101) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2023-03-24 17:37:20,601 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:9000
+2023-03-24 17:37:20,601 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow AJP listener ajp stopped, was bound to 127.0.0.1:8001
+2023-03-24 17:37:20,601 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2023-03-24 17:37:20,602 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-7) ISPN000080: Disconnecting JGroups channel ejb
+2023-03-24 17:37:20,606 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0004: Undertow 2.0.13.Final stopping
+2023-03-24 17:37:20,664 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment clustering2-0.0.1-SNAPSHOT.war (runtime-name: clustering2-0.0.1-SNAPSHOT.war) in 386ms
+2023-03-24 17:37:20,691 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0050: WildFly Full 14.0.0.Final (WildFly Core 6.0.1.Final) stopped in 426ms
