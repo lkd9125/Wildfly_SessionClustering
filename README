@@ -1,0 +1,11 @@
+Wildfly 14버전 - JKD 1.8 사용 했습니다.
+
+1_14 , 2_14 Wildfly로 띄운 서버 2개를 세션 클러스터링 하는 예제입니다.
+테스트 war파일은 clustring2 파일에 있는걸 war로 만들어서 wildfly에 올리시면 됩니다.
+
+올리는 경로 (배포경로)는 standalone -> deployment 에 두시면 됩니다.
+
+그리구 bin에 있는
+
+linux/mac 경우 -> sh standalone.sh --server-confg=standalone-ha.xml 로 실행
+windox 경우는 standalone.bat 파일로 실행하는데 --server-confg=standalone-ha.xml 이 옵션 넣는걸 찾아야 합니다
